@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Project Specific - CRITICAL 
+src/io/
+!src/io/.gitkeep  # Optional: allows you to commit the folder structure without the files
+*.jsonl
+*.jsonl.gz
+*.parquet
+*.csv
+
+# IDE
+.vscode/
+.idea/
