@@ -1,2 +1,5 @@
 pandas
+numpy
 pyarrow
+torch
+sentence-transformers
