@@ -1,10 +1,22 @@
+"""
+eda_preliminary.py
+------------------
+Role: Performs Exploratory Data Analysis (EDA) on the extracted JSONL files. 
+It verifies column names, checks for missing values (specifically justifying 
+the dropping of Price/Bought_Together), and validates the join keys 
+between the metadata and review datasets.
+
+Usage: Run from root via module mode: python -m src.eda_preliminary
+"""
 import json
 import gzip
 import pandas as pd
 from pathlib import Path
 
 # --- CONFIGURATION ---
-INPUT_DIR = Path("src/io/input/extracted") 
+# Dynamically resolve paths relative to this file
+SRC_DIR = Path(__file__).resolve().parent
+INPUT_DIR = SRC_DIR / "io" / "input" / "extracted"
 
 def peek_data(filename, n_rows=5000):
     """
