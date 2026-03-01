@@ -21,3 +21,7 @@ src/io/
 # IDE
 .vscode/
 .idea/
+
+Assignment.txt
+CLAUDE.md
+.claude
