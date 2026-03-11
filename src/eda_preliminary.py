@@ -18,7 +18,7 @@ from pathlib import Path
 SRC_DIR = Path(__file__).resolve().parent
 INPUT_DIR = SRC_DIR / "io" / "input" / "extracted"
 
-def peek_data(filename, n_rows=5000):
+def peek_data(filename, n_rows=500000):
     """
     Reads the first n_rows of a JSONL file into a Pandas DataFrame.
     Handles both .jsonl and .jsonl.gz if necessary.
